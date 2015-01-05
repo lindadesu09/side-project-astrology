@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Astrology</title>
+    <meta name="description" content="Introduction to Astrology" />
+    <meta name="keywords" content="astrology"/>
+    <meta name="author" content="Linda"/>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- My Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="navigation" class="navbar navbar-inverse navbar-fixed-top not-visible-nav">
+    <div class="menu-position">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-contents">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="#" class="navbar-brand">
+          <img class="header-logo" src="img/logo-nav-white.png" onmouseover="this.src='img/logo-nav-blue.png'" onmouseout="this.src='img/logo-nav-white.png'" alt="logo">
+        </a>
+      </div>  
+      <div class="collapse navbar-collapse" id="navbar-contents">
+        <ul class="nav navbar-nav" role="navigation">
+          <li><a href="#home" class="scroll"><i class="flaticon-flag42"></i>Home</a></li>
+          <li><a href="#planets" class="scroll"><i class="flaticon-space19"></i>Planets</a></li>
+          <li><a href="#signs" class="scroll"><i class="flaticon-saturn1"></i>Signs</a></li>
+          <li><a href="#houses" class="scroll"><i class="flaticon-space26"></i>&nbsp;Houses</a></li>
+          <li><a href="#universe" class="scroll"><i class="flaticon-sun52"></i>&nbsp;Universe</a></li>
+          <li><a href="#contact" class="scroll"><i class="flaticon-send4"></i>&nbsp;Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a data-toggle="modal" href="#registerModal" class="btn btn-header btn-header-blue">Get in Touch<i class="flaticon-rocket61"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Homepage -->
+  <section id="home" class="banner">
+    <div id="bannerSlider" class="carousel carousel-fade slide" data-ride="carousel">
+    <!-- # data-ride="carousel": change the slide auotmatically-->
+      <ol class="carousel-indicators waypoint">
+        <li data-target="#bannerSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#bannerSlider" data-slide-to="1" class=""></li>
+        <li data-target="#bannerSlider" data-slide-to="2" class=""></li>
+        <li data-target="#bannerSlider" data-slide-to="3" class=""></li>
+      </ol>
+
+      <!-- Carousel -->
+        <div class="carousel-inner">
+          <div class="item active slider1">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="col-md-12">
+                  <div class="content">
+                    <a href="#planets" class="scroll wow bounceInDown"><img src="img/logo-blue.png" alt="logo"></a>
+                    <br>
+                    <h1 class="wow bounce highlight-blue">DISCOVER ASTROLOGY</h1>
+                    <h3 class="highlight-blue">PLANETS &#10026; SIGNS &#10026; HOUSES</h3>
+                    <br>
+                    <a data-toggle="modal" href="#registerModal" class="btn btn-carousel btn-carousel-blue">Get In Touch<i class="flaticon-rocket61"></i></a>
+                    <div class="space space01 wow bounceIn hidden-xs" data-wow-delay="0.4s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="item slider2">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="col-md-12">
+                  <div class="content">
+                    <a href="#planets" class="scroll wow bounceInDown"><img src="img/logo-darkpurple.png" alt="logo"></a>
+                    <br>
+                    <h1 class="wow bounce highlight-darkpurple">12 ZODIAC SIGNS</h1>
+                    <h3 class="highlight-darkpurple">PLANETS &#10026; SIGNS &#10026; HOUSES</h3>
+                    <br>
+                    <a data-toggle="modal" href="#registerModal" class="btn btn-carousel btn-carousel-darkpurple">Get In Touch<i class="flaticon-rocket61"></i></a>
+                    <div class="space02 wow bounceIn hidden-xs" data-wow-delay="0.4s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item slider3">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="col-md-12">
+                  <div class="content">
+                    <a href="#planets" class="scroll wow bounceInDown"><img src="img/logo-red.png" alt="logo"></a>
+                    <br>
+                    <h1 class="wow bounce highlight-red">12 HOUSES</h1>
+                    <h3 class="highlight-red">PLANETS &#10026; SIGNS &#10026; HOUSES</h3>
+                    <br>
+                    <a data-toggle="modal" href="#registerModal" class="btn btn-carousel btn-carousel-red">Get In Touch<i class="flaticon-rocket61"></i></a>
+                    <div class="space03 wow bounceIn hidden-xs" data-wow-delay="0.4s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end .carousel-inner -->
+    </div><!-- / #bannerSlider .carousel -->
+
+    <a class="left carousel-control" href="#bannerSlider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#bannerSlider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <div style="clear: both;"></div>
+  </section><!-- end #home -->
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron" style="background: url(img/sky01.jpg) center center; height:600px;">
+    <div class="content" style="padding-top:80px;">
+      <a href="#planets" class=""><img class="jumbo-logo text-center" src="img/logo-blue.png" alt="logo"></a>
+      <br>
+      <h1 class="highlight-blue">DISCOVER ASTROLOGY</h1>
+      <h3 class="highlight-blue">PLANETS &#10026; SIGNS &#10026; HOUSES</h3>
+      <br>
+      <a data-toggle="modal" href="#registerModal" class="btn btn-carousel btn-carousel-blue">Get In Touch<i class="flaticon-rocket61"></i></a>
+    </div>    
+  </div>
+
+  <!-- Modal #registerModel -->
+  <div class="modal fade" id="registerModal">
+    <div class="modal-dialog"><!-- center on the page -->
+      <div class="modal-content"><!-- background col/ box-shadow/ border style/ round corner -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <!-- data-dismiss="modal": close the modal once the submit btn is clicked -->
+          <h4 class="modal-title">Let's get in touch!</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group"> <!-- ".sr-only" (hide) for Web Accessibility only -->
+              <label class="sr-only" for="Your name">Your name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="email">Your name</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+             <p>What's your Zodiac Sign?</p>
+              <select class="form-control">
+                <option>Aries (March 21 - April 19)</option>
+                <option>Tarus (April 21 - May 20)</option>
+                <option>Gemini (May 21 - June 20)</option>
+                <option>Cancer (June 21 - July 22)</option>
+                <option>Leo (July 21 - August 22)</option>
+                <option>Virgo (August 23 - September 22)</option>
+                <option>Libra (September 23 - October 22)</option>
+                <option>Scorpio (October 23 - November 21)</option>
+                <option>Sagittarius (November 22 - December 21)</option>
+                <option>Capricorn (December 22 - January 19)</option>
+                <option>Aquarius (January 21 - February 18)</option>
+                <option>Pisces (February 19 - March 20)</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-submit" data-dismiss="modal">Send</button>
+        </div>
+      </div><!-- end .modal-content-->
+    </div><!-- end .modal-dialoge-->
+  </div><!-- end .modal-->
+
+  <!-- Video Modal -->
+    <div class="modal fade" id="videoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Universe</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://www.youtube.com/embed/wNDGgL73ihY" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Video Modal -->
+
+  <!-- 01-Planets -->
+  <section id="planets">
+  <div class="container">
+    <div class="col-sm-12">
+
+      <div class="planets wow bounce add-top">
+        <h2>Planets<span>Find out more about the Planets</span></h2>
+      </div>
+
+      <div class="col-sm-4 hidden-xs add-top">
+        <div class="list wow fadeInUp">
+          <img class="flat-icons" src="img/star01-sun.png" alt="flaticons">
+          <h5>Sun</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="list wow fadeInUp" data-wow-delay="0.4s">
+          <img class="flat-icons" src="img/star02-moon.png" alt="flaticons">
+          <h5>Moon</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="list wow fadeInUp" data-wow-delay="0.4s">
+          <img class="flat-icons" src="img/star03-mercury.png" alt="flaticons">
+          <h5>Mercury</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 add-top">
+          <div class="list wow fadeInUp" data-wow-delay="0.2s">
+            <img class="flat-icons" src="img/star04-venus.png" alt="flaticons">
+            <h5>Venus</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="list wow fadeInUp" data-wow-delay="0.6s">
+            <img class="flat-icons" src="img/star05-mars.png" alt="flaticons">
+            <h5>Mars</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="list wow fadeInUp" data-wow-delay="0.6s">
+            <img class="flat-icons" src="img/star06-jupiter.png" alt="flaticons">
+            <h5>Jupiter</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+      </div>
+
+      <div class="col-sm-4 add-top">
+          <div class="list wow fadeInUp" data-wow-delay="0.2s">
+            <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+            <h5>Saturn</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="list wow fadeInUp" data-wow-delay="0.6s">
+            <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+            <h5>Rahu</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="list wow fadeInUp" data-wow-delay="0.6s">
+            <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+            <h5>Ketu</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+  </section>
+
+  <!-- Signs -->
+  <section id="signs">
+    <div class="container">
+      <div class="col-sm-12">
+      <div class="row">
+        <div class="signs wow bounce add-bottom">
+          <h2 class="highlight-purple">Signs<span>Find out more about the 12 Zodiac Signs</span></h2>
+        </div>
+
+          <div class="col-sm-4">
+            <div class="list wow bounceInLeft sign-box"><a class="popup-with-zoom-anim" href="#sign01">
+              <h5 class="highlight-01">Aries&nbsp;&nbsp;<i class="sign-icon flaticon-aries6"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div id="sign01" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z01.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Aries</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div><!-- end .list -->
+
+            <div class="list wow bounceInLeft sign-box"><a class="popup-with-zoom-anim" href="#sign02">
+              <h5 class="highlight-02" >Taurus&nbsp;&nbsp;<i class="sign-icon flaticon-taurus8"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign02" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z02.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Taurus</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInLeft sign-box"><a class="popup-with-zoom-anim" href="#sign03">
+              <h5 class="highlight-03">Gemini&nbsp;&nbsp;<i class="sign-icon flaticon-gemini5"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign03" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z03.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Gemini</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInLeft sign-box"><a class="popup-with-zoom-anim" href="#sign04">
+              <h5 class="highlight-04">Cancer&nbsp;&nbsp;<i class="sign-icon flaticon-cancer8"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign04" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z04.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Cancer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInLeft sign-box"><a class="popup-with-zoom-anim" href="#sign05">
+              <h5 class="highlight-05">Leo&nbsp;&nbsp;<i class="sign-icon flaticon-leo6"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign05" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z05.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Leo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+          </div>
+
+          <div class="col-sm-4 wow bounceIn">
+            <img class="zimg hidden-sm hidden-xs" src="img/gc-12sign.png" class="img-responsive center" alt="12 signs"><br>
+
+            <div class="list wow bounceInUp sign-box"><a class="popup-with-zoom-anim" href="#sign06">
+              <h5 class="highlight-06">Virgo&nbsp;&nbsp;<i class="sign-icon flaticon-virgo5"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign06" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z06.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Virgo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInUp sign-box"><a class="popup-with-zoom-anim" href="#sign07">
+              <h5 class="highlight-07">Libra&nbsp;&nbsp;<i class="sign-icon flaticon-libra7"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign07" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z07.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info">
+                        <h3>Libra</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+          </div>
+
+          <div class="col-sm-4">
+            <div class="list wow bounceInRight sign-box"><a class="popup-with-zoom-anim" href="#sign08">
+              <h5 class="highlight-08">Scorpio&nbsp;&nbsp;<i class="sign-icon flaticon-scorpion3"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign08" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z08.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info"> 
+                        <h3>Scorpio</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInRight sign-box"><a class="popup-with-zoom-anim" href="#sign09">
+              <h5 class="highlight-09">Sagittarius&nbsp;&nbsp;<i class="sign-icon flaticon-sagittarius5"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign09" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z09.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info"> 
+                        <h3>Sagittarius</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInRight sign-box"><a class="popup-with-zoom-anim" href="#sign10">
+              <h5 class="highlight-10">Capricorn&nbsp;&nbsp;<i class="sign-icon flaticon-capricorn3"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign10" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z10.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info"> 
+                        <h3>Capricorn</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInRight sign-box"><a class="popup-with-zoom-anim" href="#sign11">
+              <h5 class="highlight-11">Aquarius&nbsp;&nbsp;<i class="sign-icon flaticon-aquarius4"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign11" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z11.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info"> 
+                        <h3>Aquarius</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </a></div>
+
+            <div class="list wow bounceInRight sign-box"><a class="popup-with-zoom-anim" href="#sign12">
+              <h5 class="highlight-12">Pisces&nbsp;&nbsp;<i class="sign-icon flaticon-pisces3"></i></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div id="sign12" class="mfp-hide">
+                 <div class="popup-box">
+                     <div class="popup-content">
+                        <img src="img/z12.png" class="img-responsive" alt=""/>
+                     </div>
+                      <div class="sign-info"> 
+                        <h3>Pisces</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div class="popup_grid">
+                            <ul class="info1">
+                                <li><span>Nature: </span>Tamas</li>
+                                <li><span>Objective: </span>Rajas</li>
+                                <li><span>Result: </span>Sattva</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                          </div>
+                       </div> <!-- end .sign-info  -->
+                      <div class="clearfix"></div>
+                 </div><!-- end .popup-box -->
+                </div><!-- end .mfp-hide --> 
+            </div>
+          </a></div>
+        </div><!-- row -->
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </section>
+  <div class="add-bottom"></div>
+
+  <!-- 03-Houses -->
+  <section id="houses">
+  <div class="container">
+    <div class="col-sm-12">
+    <div class="houses wow bounce add-top add-bottom">
+      <h2>Houses<span>Find out more about the Houses</span></h2>
+    </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp">
+        <img class="flat-icons" src="img/star01-sun.png" alt="flaticons">
+        <h5>House 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.4s">
+        <img class="flat-icons" src="img/star02-moon.png" alt="flaticons">
+        <h5>House 2</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.6s">
+        <img class="flat-icons" src="img/star03-mercury.png" alt="flaticons">
+        <h5>House 3</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.8s">
+        <img class="flat-icons" src="img/star03-mercury.png" alt="flaticons">
+        <h5>House 4</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.2s">
+        <img class="flat-icons" src="img/star04-venus.png" alt="flaticons">
+        <h5>House 5</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.4s">
+        <img class="flat-icons" src="img/star05-mars.png" alt="flaticons">
+        <h5>House 6</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.6s">
+        <img class="flat-icons" src="img/star06-jupiter.png" alt="flaticons">
+        <h5>House 7</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.8s">
+        <img class="flat-icons" src="img/star06-jupiter.png" alt="flaticons">
+        <h5>House 8</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.2s">
+        <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+        <h5>House 9</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.4s">
+        <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+        <h5>House 10</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.6s">
+        <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+        <h5>House 11</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 list wow fadeInUp" data-wow-delay="0.8s">
+        <img class="flat-icons" src="img/star07-saturn.png" alt="flaticons">
+        <h5>House 12</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+    </div><!-- end .col-sm-12-->
+  </div><!-- end .container-->
+  <div style="clear: both;"></div>
+  </section>
+
+  <!-- 04-Universe-->
+  <section id="universe">
+    <!-- <div class="container"> -->
+      <div class="col-sm-12">
+          <div class="row wow fadeIn">
+            <div class="universebg">
+              <h2 class="scroll wow bounceIn text-center add-top highlight-darkpurple">Universe<br>
+              <a data-toggle="modal" href="#videoModal" class="scroll wow bounce"><i class="play-icon fa-play-circle-o highlight-darkpurple"></i></a></h2>
+            </div>
+          </div>
+      </div>
+    <!-- </div>   -->
+  <div style="clear: both;"></div>
+  </section>
+
+  <!-- 05-Contact Us -->
+  <section id="contact" class="add-top">
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="wow fadeInUp add-top add-bottom">
+          <h2>Contact<span>Drop us a line!</span></h2>
+        </div>
+        <div class="col-sm-8 wow fadeInUp" data-wow-delay="0.4s">
+          <h3>Enquiry <i class="flaticon-black218"></i></h3>
+          <form role="form">
+            <div class="form-group">
+              <label for="footer-eamil">Email address</label>
+              <input type="email" class="form-control" id="footer-email" placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-sm-4 contact-address wow fadeInUp" data-wow-delay="0.4s">
+          <h3>Information <i class="flaticon-pin56"></i></h3>
+          <p>Email: info@astrology.com<br>
+             Tel: +852 6888 6888            
+          </p>
+        </div>
+      </div><!-- end .row-->
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+  </section>
+
+  <!-- Footer -->
+ <section id="footer">
+  <div class="container">
+    <div class="col-md-12"> 
+
+      <div class="content">
+        <a href="#home" class="scroll wow bounceIn footer-logo"><img src="img/logo-nav-white.png" onmouseover="this.src='img/logo-nav-blue.png'" onmouseout="this.src='img/logo-nav-white.png'" alt="logo"></a>
+         <div class="wow bounceIn">
+          <span class="footer-icon fa fa-facebook-square fa-3x"></span>
+          <span class="footer-icon fa fa-twitter-square fa-3x"></span>
+          <span class="footer-icon fa fa-pinterest-square fa-3x"></span>
+          <span class="footer-icon fa fa-flickr fa-3x"></span>
+          <span class="footer-icon fa fa-google-plus-square fa-3x"></span>
+        </div>
+        <div class="copyrights add-bottom">copyright &copy;2014 - All Rights Reserved.</div>
+      </div>
+    </div>    
+   </div> <!-- End Container-->
+   <div style="clear: both;"></div>
+  </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    
+    <!-- animation-->
+    <script type="text/javascript" src="js/dist/wow.js"></script>
+
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- mobile nav/ bannerSlider -->
+    <script type="text/javascript" src="js/toucheffects.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+   
+    <!-- Popup lightbox main JS and CSS files -->
+    <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+      });
+    });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          $(".scroll").click(function(event){   
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+          });
+        });
+    </script>
+  </body>
+</html>
